@@ -1,0 +1,1 @@
+const e={currencyId:-1,currencyName:"-- Select currency --"},a={languageId:-1,languageName:"-- Select language --"},t={timezoneId:-1,timezoneName:"-- Select timezone --"},m={dateFormatId:-1,dateFormat:"-- Select date format --"},r={timeFormatId:-1,timeFormat:"-- Select time format --"},c="Support user";export{c as S,a,t as b,m as c,r as d,e as k};

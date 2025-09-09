@@ -1,0 +1,1 @@
+import{j as l}from"./pdf-editor-be9d2bd2.js";import"./react-vendor-379f659a.js";const o=o=>{const{className:r,label:s,small:e,right:t,disabled:a,...c}=o;return l.jsx("label",{style:{color:(null==o?void 0:o.color)??""},className:`rs-form-control-label ${a?"click-off":""} ${e?"fs17":""} ${r||""} ${t?"w-100 text-end":""}`,...c,children:s})};export{o as F};
