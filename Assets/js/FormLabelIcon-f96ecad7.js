@@ -1,1 +1,0 @@
-import{j as r}from"./pdf-editor-be9d2bd2.js";import"./react-vendor-379f659a.js";const s=s=>{const{className:o,disabled:e,children:c}=s;return r.jsx("div",{className:`rs-form-label-icons-group ${o||""} ${e?"click-off":""}`,children:c})};export{s as F};

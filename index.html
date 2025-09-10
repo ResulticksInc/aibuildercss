@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <!-- Critical performance optimizations -->
+  <title>SmartDX</title>
+  <meta name="description" content="Delivering Smart Digital Experiences" />
+  
+  <!-- Preload critical resources -->
+  <link rel="preload" href="data:text/jsx;base64,aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgY3JlYXRlUm9vdCB9IGZyb20gJ3JlYWN0LWRvbS9jbGllbnQnOwppbXBvcnQgeyBCcm93c2VyUm91dGVyIGFzIFJvdXRlciB9IGZyb20gJ3JlYWN0LXJvdXRlci1kb20nOyAvLyBJbXBvcnQgUm91dGVyCmltcG9ydCBBcHAgZnJvbSAnLi9BcHAnOwoKLy8gaW1wb3J0ICdAcmVzdWx0aWNrcy9wdXNoLWJ1aWxkZXIvZGlzdC9zdHlsZS5jc3MnOwovLyBpbXBvcnQgJ0ByZXN1bHRpY2tzL3JzcC1mb3Jtcy9kaXN0L3N0eWxlLmNzcycKCi8vIGltcG9ydCAnQHByb2dyZXNzL2tlbmRvLXRoZW1lLWRlZmF1bHQvZGlzdC9hbGwuY3NzJzsKLy8gaW1wb3J0ICdAcmVzdWx0aWNrcy9lbWFpbC1idWlsZGVyL2Rpc3Qvc3R5bGUuY3NzJzsKaW1wb3J0ICJAcmVzdWx0aWNrcy9yc3AtY29tcG9uZW50cy9kaXN0L3N0eWxlLmNzcyI7CgppbXBvcnQgJy4vQXNzZXRzL1N0eWxlc2hlZXQvc2Nzcy9tYWluLnNjc3MnCgovL2ltcG9ydCB7IE5ldHdvcmtNYW5hZ2VyfSBmcm9tICdAcmVzdWx0aWNrcy9zZHgtbmV0d29yay1tYW5hZ2VyJzsKCi8vIGltcG9ydCAnLi9pbmRleC5jc3MnCndpbmRvdy5zd1JlZyA9ICIiOwp3aW5kb3cuc2R4Y2FjaGUgPSB7fQovL05ldHdvcmtNYW5hZ2VyLmxvYWRDb25maWdEZXRhaWxzKCkKCmNvbnN0IGNvbnRhaW5lciA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdyb290Jyk7CmNvbnN0IHJvb3QgPSBjcmVhdGVSb290KGNvbnRhaW5lcik7CgovLyBSZWdpc3RlciBTZXJ2aWNlIFdvcmtlciBmb3IgYmV0dGVyIGNhY2hpbmcgYW5kIHBlcmZvcm1hbmNlCmlmICgnc2VydmljZVdvcmtlcicgaW4gbmF2aWdhdG9yICYmIHByb2Nlc3MuZW52Lk5PREVfRU5WID09PSAncHJvZHVjdGlvbicpIHsKICB3aW5kb3cuYWRkRXZlbnRMaXN0ZW5lcignbG9hZCcsIGFzeW5jICgpID0+IHsKICAgIHRyeSB7CiAgICAgIGNvbnN0IHJlZ2lzdHJhdGlvbiA9IGF3YWl0IG5hdmlnYXRvci5zZXJ2aWNlV29ya2VyLnJlZ2lzdGVyKCcvc3cuanMnKTsKICAgICAgd2luZG93LnN3UmVnID0gcmVnaXN0cmF0aW9uOwogICAgICAKICAgICAgY29uc29sZS5sb2coJ1NXOiBTZXJ2aWNlIFdvcmtlciByZWdpc3RlcmVkIHN1Y2Nlc3NmdWxseScpOwogICAgICAKICAgICAgLy8gTGlzdGVuIGZvciB1cGRhdGVzCiAgICAgIHJlZ2lzdHJhdGlvbi5hZGRFdmVudExpc3RlbmVyKCd1cGRhdGVmb3VuZCcsICgpID0+IHsKICAgICAgICBjb25zdCBuZXdXb3JrZXIgPSByZWdpc3RyYXRpb24uaW5zdGFsbGluZzsKICAgICAgICBpZiAobmV3V29ya2VyKSB7CiAgICAgICAgICBuZXdXb3JrZXIuYWRkRXZlbnRMaXN0ZW5lcignc3RhdGVjaGFuZ2UnLCAoKSA9PiB7CiAgICAgICAgICAgIGlmIChuZXdXb3JrZXIuc3RhdGUgPT09ICdpbnN0YWxsZWQnKSB7CiAgICAgICAgICAgICAgaWYgKG5hdmlnYXRvci5zZXJ2aWNlV29ya2VyLmNvbnRyb2xsZXIpIHsKICAgICAgICAgICAgICAgIC8vIE5ldyB1cGRhdGUgYXZhaWxhYmxlCiAgICAgICAgICAgICAgICBjb25zb2xlLmxvZygnU1c6IE5ldyB2ZXJzaW9uIGF2YWlsYWJsZScpOwogICAgICAgICAgICAgICAgLy8gT3B0aW9uYWxseSBzaG93IHVwZGF0ZSBub3RpZmljYXRpb24gdG8gdXNlcgogICAgICAgICAgICAgIH0gZWxzZSB7CiAgICAgICAgICAgICAgICAvLyBGaXJzdCB0aW1lIGluc3RhbGwKICAgICAgICAgICAgICAgIGNvbnNvbGUubG9nKCdTVzogQXBwIGlzIHJlYWR5IGZvciBvZmZsaW5lIHVzZScpOwogICAgICAgICAgICAgIH0KICAgICAgICAgICAgfQogICAgICAgICAgfSk7CiAgICAgICAgfQogICAgICB9KTsKICAgIH0gY2F0Y2ggKGVycm9yKSB7CiAgICAgIGNvbnNvbGUubG9nKCdTVzogU2VydmljZSBXb3JrZXIgcmVnaXN0cmF0aW9uIGZhaWxlZDonLCBlcnJvcik7CiAgICB9CiAgfSk7Cn0gZWxzZSB7CiAgLy8gRGV2ZWxvcG1lbnQgbW9kZSAtIGluaXRpYWxpemUgZW1wdHkgY2FjaGUKICB3aW5kb3cuc2R4Y2FjaGUgPSBuZXcgTWFwKCk7Cn0KCi8vIFJlbW92ZSBsb2FkaW5nIHNrZWxldG9uIHdoZW4gUmVhY3QgcmVuZGVycwpjb25zdCBza2VsZXRvbiA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoJy5hcHAtc2tlbGV0b24nKTsKaWYgKHNrZWxldG9uKSB7CiAgc2V0VGltZW91dCgoKSA9PiB7CiAgICBza2VsZXRvbi5zdHlsZS5vcGFjaXR5ID0gJzAnOwogICAgc2V0VGltZW91dCgoKSA9PiBza2VsZXRvbi5yZW1vdmUoKSwgMzAwKTsKICB9LCAxMDApOwp9Cgpyb290LnJlbmRlcigKICA8Um91dGVyPgogICAgPEFwcCAvPgogIDwvUm91dGVyPgopOw==" as="script" />
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/ResulticksInc/aibuildercss/favicon.png" as="image" type="image/png" />
+  
+  <!-- DNS prefetch for external domains -->
+  <link rel="dns-prefetch" href="https://apig.smartdx.co">
+  <link rel="dns-prefetch" href="https://apigd.smartdx.co">
+  <link rel="dns-prefetch" href="https://sdkmg.smartdx.co">
+  <link rel="dns-prefetch" href="https://sdkma.smartdx.co">
+  <link rel="dns-prefetch" href="https://teamsdk.smartdx.co">
+  <link rel="dns-prefetch" href="https://soc.resu.io">
+  <link rel="dns-prefetch" href="https://geolocation-db.com">
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+  
+  <!-- Favicon with optimized loading -->
+  <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/ResulticksInc/aibuildercss/favicon.png">
+  <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/ResulticksInc/aibuildercss/favicon/apple-touch-icon.png">
+  
+  <!-- Critical CSS loading -->
+  <style>
+    /* Critical CSS for initial render */
+    #root { 
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    /* Loading skeleton styles */
+    .app-skeleton {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+    }
+    
+    .skeleton-loader {
+      width: 60px;
+      height: 60px;
+      border: 3px solid #f3f3f3;
+      border-top: 3px solid #007bff;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+    
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    
+    /* Hide skeleton when app loads */
+    .app-loaded .app-skeleton {
+      display: none;
+    }
+  </style>
+  
+  <!-- Open Graph meta tags -->
+  <meta property="og:title" content="SmartDX" />
+  <meta property="og:description" content="Delivering Smart Digital Experiences" />
+  <meta property="og:image" content="https://app.smartdx.co/assets/BrandLogo-1f5edd27.svg" />
+  <meta property="og:url" content="https://run.smartdx.co" />
+  <meta property="og:type" content="website" />
+  
+  <!-- Twitter Card meta tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="SmartDX" />
+  <meta name="twitter:description" content="Delivering Smart Digital Experiences" />
+  
+  <!-- PWA manifest -->
+  <link rel="manifest" href="https://cdn.jsdelivr.net/gh/ResulticksInc/aibuildercss/manifest.webmanifest" />
+  <meta name="theme-color" content="#007bff" />
+
+  <script type="module" crossorigin src="https://cdn.jsdelivr.net/gh/ResulticksInc/aibuildercss/assets/js/index-23a09c37.js"></script>
+  <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/gh/ResulticksInc/aibuildercss/assets/js/react-vendor-379f659a.js">
+  <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/gh/ResulticksInc/aibuildercss/assets/js/pdf-editor-e8cb7a76.js">
+  <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/gh/ResulticksInc/aibuildercss/assets/js/kendo-5d73125a.js">
+  <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/gh/ResulticksInc/aibuildercss/assets/js/drag-drop-2020d552.js">
+  <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/gh/ResulticksInc/aibuildercss/assets/js/ui-f7791cf3.js">
+  <link rel="modulepreload" crossorigin href="https://cdn.jsdelivr.net/gh/ResulticksInc/aibuildercss/assets/js/utils-16c7e021.js">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ResulticksInc/aibuildercss/assets/css/pdf-editor-1e521ea9.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ResulticksInc/aibuildercss/assets/css/kendo-8498baa5.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ResulticksInc/aibuildercss/assets/css/index-4b087ecb.css">
+</head>
+
+
+
+
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  
+  <!-- App container with loading skeleton -->
+  <div id="root">
+    <!-- Loading skeleton - critical for FCP -->
+    <div class="app-skeleton">
+      <div class="skeleton-loader"></div>
+    </div>
+  </div>
+  <!-- <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <script src="https://accounts.google.com/gsi/client" async defer></script> -->
+  <!-- Performance: Load Socket.IO only after authentication within the app -->
+  
+  <!-- Performance monitoring script -->
+  <script>
+    // Performance monitoring and app loading indicator
+    if ('performance' in window) {
+      window.addEventListener('load', function() {
+        // Mark app as loaded for CSS
+        document.body.classList.add('app-loaded');
+        
+        // Log performance metrics
+        setTimeout(function() {
+          const perf = performance.getEntriesByType('navigation')[0];
+          if (perf && window.console) {
+            console.log('FCP:', perf.responseStart - perf.requestStart, 'ms');
+            console.log('Load Time:', perf.loadEventEnd - perf.navigationStart, 'ms');
+          }
+        }, 0);
+      });
+    }
+    
+    // Remove loading skeleton when React app starts
+    window.addEventListener('DOMContentLoaded', function() {
+      setTimeout(function() {
+        const skeleton = document.querySelector('.app-skeleton');
+        if (skeleton && document.querySelector('[data-reactroot]')) {
+          skeleton.style.display = 'none';
+        }
+      }, 1000);
+    });
+  </script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,11 @@
+placeName,latitude,longitude,radius,jsonData
+Chennai,37.7749,-122.4194,100,"[{""eventName"": ""event_1"", ""eventValue"": ""value_1""}, {""eventName"": ""event_2"", ""eventValue"": ""value_2""}]"
+Trichy,40.7128,-74.006,150,"[{""eventName"": ""event_3"", ""eventValue"": ""value_3""}]"
+New york,40.7306,-73.9352,200,"[{""eventName"": ""event_4"", ""eventValue"": ""value_4""}]"
+Los angeles,34.0522,-118.2437,250,"[{""eventName"": ""event_5"", ""eventValue"": ""value_5""}]"
+Boston,42.3601,-71.0589,120,"[{""eventName"": ""event_6"", ""eventValue"": ""value_6""}]"
+Paris,48.8566,2.3522,130,"[{""eventName"": ""event_7"", ""eventValue"": ""value_7""}]"
+London,51.5074,-0.1278,180,"[{""eventName"": ""event_8"", ""eventValue"": ""value_8""}]"
+Sydney,-33.8688,151.2093,140,"[{""eventName"": ""event_9"", ""eventValue"": ""value_9""}]"
+Tokyo,35.6762,139.6503,160,"[{""eventName"": ""event_10"", ""eventValue"": ""value_10""}]"
+Berlin,52.52,13.405,170,"[{""eventName"": ""event_11"", ""eventValue"": ""value_11""}]"
