@@ -1,1 +1,0 @@
-import{j as o}from"./pdf-editor-8270ab34.js";import"./react-vendor-379f659a.js";import{g as s}from"./kendo-5d73125a.js";const p=p=>o.jsx(s,{className:p.className,items:p.data,icon:p.icon,popupSettings:{animate:!0,popupClass:`ic-dropdown ${p.popupClass?p.popupClass:""}`},dir:p.dir?p.dir:"ltr",onItemClick:o=>p.onItemClick&&p.onItemClick(o)});export{p as K};

@@ -1,0 +1,1 @@
+import{j as s}from"./pdf-editor-5df4b936.js";import"./react-vendor-379f659a.js";const e=e=>{const{className:t,disabled:r,children:l,text:o,right:a,...c}=e;return s.jsxs("small",{className:`rs-form-small-text ${t||""} ${r?"click-off":""} fs12 ${a?"d-inline-block text-end w-100":""}`,...c,children:[o,l]})};export{e as S};
