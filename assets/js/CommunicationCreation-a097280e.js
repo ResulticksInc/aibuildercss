@@ -1,1 +1,0 @@
-import{j as r}from"./pdf-editor-e8cb7a76.js";import{L as o}from"./LayoutPageWrapper-ab434993.js";import"./react-vendor-379f659a.js";import{C as i}from"./ui-f7791cf3.js";import"./kendo-5d73125a.js";import"./drag-drop-2020d552.js";const s=s=>r.jsx(o,{children:r.jsx(i,{children:r.jsx("h1",{children:"CommunicationCreation"})})});export{s as default};

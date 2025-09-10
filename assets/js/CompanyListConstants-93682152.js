@@ -1,0 +1,1 @@
+import{U as e,P as r,b as s,c as a}from"./index-11ed5abc.js";const t=e=>{switch(e){case 1:return"Free";case 2:return"Essentials";case 3:return"Premier";case 4:return"Ultimate";default:return"No plan select"}},n=(t,n)=>{switch(t){case 1:return a;case 2:return s;case 3:return r;case 4:return e;default:return""}};export{t as a,n as l};

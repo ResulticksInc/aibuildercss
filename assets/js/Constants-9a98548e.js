@@ -1,1 +1,0 @@
-import{j as a}from"./pdf-editor-e8cb7a76.js";const s=()=>a.jsx("h3",{className:"marginB15",children:"Total link click activity"}),e=()=>a.jsx("h3",{className:"marginB15",children:"Communication performance"}),i=()=>a.jsx("h3",{className:"marginB15",children:"User engagement"});export{e as H,s as a,i as b};
