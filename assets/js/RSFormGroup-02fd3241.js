@@ -1,1 +1,0 @@
-import{j as r}from"./pdf-editor-5df4b936.js";import"./react-vendor-379f659a.js";const s=s=>{const{className:e,disabled:o,end:c,children:d}=s;return r.jsx("div",{className:`rs-form-group ${e||""} ${o?"click-off":""} ${c?"mb10":""}`,children:d})};export{s as R};
